@@ -1,0 +1,16 @@
+{
+  "name": "jnp-playwright",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx tsc && node dist/main.js"
+  },
+  "keywords": [],
+  "author": "Juan José Navarro Perea",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "20.12.12",
+    "playwright": "1.44.0",
+    "typescript": "5.4.5"
+  }
+}
