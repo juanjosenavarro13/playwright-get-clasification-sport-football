@@ -1,5 +1,4 @@
 import { Frame, Page } from "playwright";
-require("dotenv").config();
 
 export class Iberia {
   private url: string;
