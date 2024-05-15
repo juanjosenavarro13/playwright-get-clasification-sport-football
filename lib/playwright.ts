@@ -16,6 +16,7 @@ export class Playwright {
     const context: BrowserContext = await browser.newContext({
       userAgent: randomUserAgent,
       recordVideo: { dir: this.videosFolder },
+      ignoreHTTPSErrors: true,
     });
     const page: Page = await context.newPage();
     const utils = new Utils(context, browser);

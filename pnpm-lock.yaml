@@ -1,101 +1,87 @@
-lockfileVersion: '9.0'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-importers:
+dependencies:
+  dotenv:
+    specifier: 16.4.5
+    version: 16.4.5
+  playwright:
+    specifier: 1.44.0
+    version: 1.44.0
+  typescript:
+    specifier: 5.4.5
+    version: 5.4.5
+  user-agents:
+    specifier: 1.1.204
+    version: 1.1.204
 
-  .:
-    dependencies:
-      dotenv:
-        specifier: 16.4.5
-        version: 16.4.5
-      playwright:
-        specifier: 1.44.0
-        version: 1.44.0
-      typescript:
-        specifier: 5.4.5
-        version: 5.4.5
-      user-agents:
-        specifier: 1.1.204
-        version: 1.1.204
-    devDependencies:
-      '@types/node':
-        specifier: 20.12.12
-        version: 20.12.12
-      '@types/user-agents':
-        specifier: 1.0.4
-        version: 1.0.4
+devDependencies:
+  '@types/node':
+    specifier: 20.12.12
+    version: 20.12.12
+  '@types/user-agents':
+    specifier: 1.0.4
+    version: 1.0.4
 
 packages:
 
-  '@types/node@20.12.12':
+  /@types/node@20.12.12:
     resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
 
-  '@types/user-agents@1.0.4':
+  /@types/user-agents@1.0.4:
     resolution: {integrity: sha512-AjeFc4oX5WPPflgKfRWWJfkEk7Wu82fnj1rROPsiqFt6yElpdGFg8Srtm/4PU4rA9UiDUZlruGPgcwTMQlwq4w==}
+    dev: true
 
-  dotenv@16.4.5:
+  /dotenv@16.4.5:
     resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
     engines: {node: '>=12'}
+    dev: false
 
-  fsevents@2.3.2:
+  /fsevents@2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
 
-  lodash.clonedeep@4.5.0:
+  /lodash.clonedeep@4.5.0:
     resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
+    dev: false
 
-  playwright-core@1.44.0:
+  /playwright-core@1.44.0:
     resolution: {integrity: sha512-ZTbkNpFfYcGWohvTTl+xewITm7EOuqIqex0c7dNZ+aXsbrLj0qI8XlGKfPpipjm0Wny/4Lt4CJsWJk1stVS5qQ==}
     engines: {node: '>=16'}
     hasBin: true
+    dev: false
 
-  playwright@1.44.0:
+  /playwright@1.44.0:
     resolution: {integrity: sha512-F9b3GUCLQ3Nffrfb6dunPOkE5Mh68tR7zN32L4jCk4FjQamgesGay7/dAAe1WaMEGV04DkdJfcJzjoCKygUaRQ==}
     engines: {node: '>=16'}
     hasBin: true
-
-  typescript@5.4.5:
-    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-
-  undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
-
-  user-agents@1.1.204:
-    resolution: {integrity: sha512-5t1zhm6jqUoBfhczVElU7x+uH87bfRf/oeuspX/dQS1Xf7CwixroqGrdFaWEgQCDZvyBelGk/FBjjKseZ7VFpQ==}
-
-snapshots:
-
-  '@types/node@20.12.12':
-    dependencies:
-      undici-types: 5.26.5
-
-  '@types/user-agents@1.0.4': {}
-
-  dotenv@16.4.5: {}
-
-  fsevents@2.3.2:
-    optional: true
-
-  lodash.clonedeep@4.5.0: {}
-
-  playwright-core@1.44.0: {}
-
-  playwright@1.44.0:
     dependencies:
       playwright-core: 1.44.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: false
 
-  typescript@5.4.5: {}
+  /typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: false
 
-  undici-types@5.26.5: {}
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
 
-  user-agents@1.1.204:
+  /user-agents@1.1.204:
+    resolution: {integrity: sha512-5t1zhm6jqUoBfhczVElU7x+uH87bfRf/oeuspX/dQS1Xf7CwixroqGrdFaWEgQCDZvyBelGk/FBjjKseZ7VFpQ==}
     dependencies:
       lodash.clonedeep: 4.5.0
+    dev: false

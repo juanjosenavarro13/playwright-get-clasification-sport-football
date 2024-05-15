@@ -2,7 +2,8 @@
   "name": "jnp-playwright",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx tsc && node dist/main.js"
+    "start": "npx tsc && node dist/main.js",
+    "prepare": "npx playwright install"
   },
   "keywords": [],
   "author": "Juan José Navarro Perea",

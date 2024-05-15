@@ -4,7 +4,7 @@ require("dotenv").config();
 export class Iberia {
   private url: string;
   constructor(private readonly page: Page) {
-    this.url = "https://www.iberia.com/";
+    this.url = process.env.url ?? "https://www.iberia.com/";
   }
 
   async openHome() {
